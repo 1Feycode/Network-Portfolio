@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Feyisa Girma - Professional Network Engineer Portfolio
 
 A modern, responsive personal portfolio website engineered specifically for an aspiring Network Engineer who has completed comprehensive CCNA training and practical networking labs (with official Cisco certification pending).
@@ -207,3 +208,6 @@ Open `src/data/skills.js` to add, reorder, or customize the skill sets and tools
 
 ## 📄 License
 This project is open-source and available under the MIT License.
+=======
+# Network-Portfolio
+>>>>>>> 04afaafef5f99fd162b7b4f86dfa465c5e0d5392
