@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07111F" />
+      <stop offset="100%" stop-color="#0B1C33" />
+    </linearGradient>
+    <filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad3)" rx="8" />
+
+  <!-- Banner -->
+  <rect x="20" y="20" width="760" height="40" rx="6" fill="#0A182E" stroke="#008CFF" stroke-width="1" stroke-opacity="0.3" />
+  <text x="40" y="45" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#00A3FF">TOPOLOGY: DHCP POOL &amp; NAT OVERLOAD (PAT)</text>
+  <text x="730" y="45" font-family="'Inter', sans-serif" font-size="12" fill="#94A3B8" text-anchor="end">Private 192.168.1.0/24 &#8594; Public 209.165.200.225</text>
+
+  <!-- Left: Inside Network Boundary -->
+  <rect x="40" y="80" width="310" height="340" rx="10" fill="rgba(2, 132, 199, 0.05)" stroke="#0284C7" stroke-width="1" stroke-dasharray="5,5" />
+  <rect x="55" y="90" width="160" height="22" rx="4" fill="#0284C7" />
+  <text x="135" y="105" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">INSIDE LAN (DHCP POOL)</text>
+  <text x="55" y="130" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">Subnet: 192.168.1.0/24</text>
+  <text x="55" y="145" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">Excluded: .1 to .10</text>
+
+  <!-- Inside Switch -->
+  <rect x="140" y="210" width="90" height="30" rx="4" fill="#0A2244" stroke="#008CFF" stroke-width="1.5" />
+  <text x="185" y="230" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">SW-LAN (2960)</text>
+
+  <!-- Inside Clients -->
+  <g transform="translate(110, 320)">
+    <rect x="-20" y="-15" width="40" height="26" rx="2" fill="#0F2B52" stroke="#38BDF8" stroke-width="1" />
+    <text x="0" y="24" font-family="'Inter', sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle">Client PC 1</text>
+    <text x="0" y="38" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38BDF8" text-anchor="middle">DHCP: .11</text>
+  </g>
+  <line x1="110" y1="305" x2="160" y2="240" stroke="#008CFF" stroke-width="1.5" />
+
+  <g transform="translate(250, 320)">
+    <rect x="-20" y="-15" width="40" height="26" rx="2" fill="#0F2B52" stroke="#38BDF8" stroke-width="1" />
+    <text x="0" y="24" font-family="'Inter', sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle">Client PC 2</text>
+    <text x="0" y="38" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38BDF8" text-anchor="middle">DHCP: .12</text>
+  </g>
+  <line x1="250" y1="305" x2="200" y2="240" stroke="#008CFF" stroke-width="1.5" />
+
+  <!-- Link Switch to Gateway Router -->
+  <line x1="230" y1="225" x2="390" y2="225" stroke="#008CFF" stroke-width="2" />
+  <text x="290" y="215" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38BDF8">G0/0 (Inside)</text>
+
+  <!-- Border Gateway Router -->
+  <g transform="translate(420, 225)">
+    <circle cx="0" cy="0" r="36" fill="#091E3A" stroke="#00A3FF" stroke-width="2" filter="url(#glow3)" />
+    <path d="M -16 -6 L -6 -6 L -6 -14 L 0 -14 L 0 -6 L 16 -6" stroke="#00A3FF" stroke-width="2" fill="none" stroke-linecap="round" />
+    <path d="M 16 6 L 6 6 L 6 14 L 0 14 L 0 6 L -16 6" stroke="#00A3FF" stroke-width="2" fill="none" stroke-linecap="round" />
+    <text x="0" y="-45" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">NAT/DHCP Router</text>
+    <text x="0" y="48" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FBBF24" text-anchor="middle">ip nat inside source list 1</text>
+    <text x="0" y="62" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FBBF24" text-anchor="middle">interface G0/1 overload</text>
+  </g>
+
+  <!-- Link Router to ISP -->
+  <line x1="456" y1="225" x2="620" y2="225" stroke="#EC4899" stroke-width="2" stroke-dasharray="4,4" />
+  <text x="510" y="215" font-family="'JetBrains Mono', monospace" font-size="10" fill="#F472B6">G0/1 (Outside)</text>
+
+  <!-- Right: Outside / Simulated Internet -->
+  <rect x="480" y="80" width="280" height="340" rx="10" fill="rgba(236, 72, 153, 0.05)" stroke="#EC4899" stroke-width="1" stroke-dasharray="5,5" />
+  <rect x="495" y="90" width="150" height="22" rx="4" fill="#DB2777" />
+  <text x="570" y="105" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">OUTSIDE INTERNET</text>
+
+  <!-- ISP Cloud / Web Server -->
+  <g transform="translate(650, 225)">
+    <rect x="-40" y="-30" width="80" height="60" rx="6" fill="#1C1026" stroke="#EC4899" stroke-width="2" />
+    <rect x="-30" y="-20" width="60" height="8" rx="2" fill="#DB2777" />
+    <circle cx="20" cy="-16" r="2" fill="#34D399" />
+    <rect x="-30" y="-6" width="60" height="8" rx="2" fill="#DB2777" />
+    <circle cx="20" cy="-2" r="2" fill="#34D399" />
+    <text x="0" y="44" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Public Web Server</text>
+    <text x="0" y="58" font-family="'JetBrains Mono', monospace" font-size="10" fill="#F472B6" text-anchor="middle">IP: 209.165.201.2</text>
+  </g>
+</svg>

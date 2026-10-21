@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 620" width="100%" height="100%">
+  <defs>
+    <radialGradient id="portraitGlow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#008CFF" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#07111F" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#07111F" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142C4E" />
+      <stop offset="50%" stop-color="#0E203B" />
+      <stop offset="100%" stop-color="#071426" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D7A17A" />
+      <stop offset="50%" stop-color="#C5875C" />
+      <stop offset="100%" stop-color="#A2673D" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D1E16" />
+      <stop offset="100%" stop-color="#150E0A" />
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A3FF" />
+      <stop offset="100%" stop-color="#0066CC" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Blue Lighting Aura behind subject -->
+  <circle cx="250" cy="220" r="220" fill="url(#portraitGlow)" />
+
+  <!-- Networking Circuit Graphic in Background -->
+  <g stroke="#008CFF" stroke-opacity="0.18" stroke-width="1.5" fill="none">
+    <path d="M 80 180 L 140 180 L 180 130 L 220 130" />
+    <circle cx="80" cy="180" r="3" fill="#008CFF" fill-opacity="0.4" />
+    <circle cx="220" cy="130" r="3" fill="#008CFF" fill-opacity="0.4" />
+
+    <path d="M 420 180 L 360 180 L 320 130 L 280 130" />
+    <circle cx="420" cy="180" r="3" fill="#008CFF" fill-opacity="0.4" />
+    <circle cx="280" cy="130" r="3" fill="#008CFF" fill-opacity="0.4" />
+
+    <path d="M 60 260 L 120 260 L 150 290" />
+    <circle cx="60" cy="260" r="3" fill="#008CFF" fill-opacity="0.4" />
+    
+    <path d="M 440 260 L 380 260 L 350 290" />
+    <circle cx="440" cy="260" r="3" fill="#008CFF" fill-opacity="0.4" />
+  </g>
+
+  <!-- Body / Shoulders / Hoodie -->
+  <g filter="url(#shadow)">
+    <!-- Main Torso / Navy Hoodie -->
+    <path d="M 100 620 C 100 480 140 400 210 375 L 250 395 L 290 375 C 360 400 400 480 400 620 Z" fill="url(#hoodieGrad)" />
+    
+    <!-- Crossed Arms Silhouette -->
+    <!-- Left arm crossed over -->
+    <path d="M 115 470 C 130 430 180 430 250 455 C 320 480 370 480 380 520 C 370 560 300 565 240 540 C 180 515 130 520 115 470 Z" fill="#0B1A2F" stroke="#1E3A5F" stroke-width="1.5" />
+    <!-- Forearm highlight / wrist -->
+    <path d="M 180 480 C 230 490 290 495 340 485" stroke="#008CFF" stroke-opacity="0.2" stroke-width="2" fill="none" />
+    
+    <!-- Hoodie Strings / Collar Detail -->
+    <path d="M 215 385 C 235 440 238 460 238 480" stroke="#008CFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8" />
+    <path d="M 285 385 C 265 440 262 460 262 480" stroke="#008CFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8" />
+    <!-- String aglets -->
+    <rect x="236" y="480" width="4" height="12" rx="2" fill="#38BDF8" />
+    <rect x="260" y="480" width="4" height="12" rx="2" fill="#38BDF8" />
+    
+    <!-- Inner T-shirt Collar -->
+    <path d="M 225 375 Q 250 405 275 375 Z" fill="#07111F" />
+
+    <!-- Neck -->
+    <path d="M 228 300 L 228 380 Q 250 395 272 380 L 272 300 Z" fill="url(#skinGrad)" />
+    <!-- Neck shadow -->
+    <path d="M 228 300 Q 250 325 272 300 L 272 320 Q 250 338 228 320 Z" fill="#88522E" opacity="0.5" />
+
+    <!-- Head / Face -->
+    <!-- Base Face -->
+    <path d="M 195 200 C 195 130 305 130 305 200 C 305 270 280 310 250 310 C 220 310 195 270 195 200 Z" fill="url(#skinGrad)" />
+
+    <!-- Beard / Stubble (Neat professional trimmed stubble) -->
+    <path d="M 205 235 C 205 285 220 306 250 306 C 280 306 295 285 295 235 C 285 242 275 250 250 250 C 225 250 215 242 205 235 Z" fill="#3D291F" opacity="0.85" />
+
+    <!-- Hair (Neat modern fade haircut) -->
+    <path d="M 188 185 C 188 135 200 95 250 95 C 300 95 312 135 312 185 C 305 155 290 140 250 140 C 210 140 195 155 188 185 Z" fill="url(#hairGrad)" />
+    <!-- Hair Volume Top -->
+    <ellipse cx="250" cy="115" rx="55" ry="32" fill="url(#hairGrad)" />
+
+    <!-- Ears -->
+    <path d="M 192 195 C 185 195 185 225 194 225 Z" fill="url(#skinGrad)" />
+    <path d="M 308 195 C 315 195 315 225 306 225 Z" fill="url(#skinGrad)" />
+
+    <!-- Eyes and Eyebrows -->
+    <path d="M 215 182 Q 228 178 238 182" stroke="#22150E" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 262 182 Q 272 178 285 182" stroke="#22150E" stroke-width="3" stroke-linecap="round" fill="none" />
+    <!-- Eyes -->
+    <circle cx="227" cy="195" r="4.5" fill="#24160E" />
+    <circle cx="273" cy="195" r="4.5" fill="#24160E" />
+    <circle cx="228" cy="193" r="1.5" fill="#FFFFFF" />
+    <circle cx="274" cy="193" r="1.5" fill="#FFFFFF" />
+
+    <!-- Eyeglasses (Stylish Modern Frames like reference photo) -->
+    <!-- Left rim -->
+    <rect x="210" y="183" width="34" height="26" rx="7" fill="none" stroke="#008CFF" stroke-width="2.5" />
+    <!-- Right rim -->
+    <rect x="256" y="183" width="34" height="26" rx="7" fill="none" stroke="#008CFF" stroke-width="2.5" />
+    <!-- Nose bridge -->
+    <path d="M 244 193 Q 250 190 256 193" stroke="#008CFF" stroke-width="2.5" fill="none" />
+    <!-- Temples -->
+    <line x1="210" y1="190" x2="192" y2="195" stroke="#008CFF" stroke-width="2" />
+    <line x1="290" y1="190" x2="308" y2="195" stroke="#008CFF" stroke-width="2" />
+    <!-- Lens reflection -->
+    <line x1="216" y1="188" x2="238" y2="204" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.5" />
+    <line x1="262" y1="188" x2="284" y2="204" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.5" />
+
+    <!-- Nose -->
+    <path d="M 250 195 L 246 222 L 254 222" stroke="#9E6139" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Confident Smile -->
+    <path d="M 235 242 Q 250 252 265 242" stroke="#5E351F" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Interactive Floating Status Badge (CCNA Trained | Networking Specialist) -->
+  <g transform="translate(250, 565)" filter="url(#shadow)">
+    <rect x="-170" y="-22" width="340" height="44" rx="22" fill="#0A1E38" stroke="#008CFF" stroke-width="1.5" />
+    <!-- Pulsing Green Dot (Online / Available for roles) -->
+    <circle cx="-135" cy="0" r="5" fill="#10B981" />
+    <circle cx="-135" cy="0" r="9" fill="#10B981" fill-opacity="0.3" />
+    <text x="-115" y="5" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">CCNA Trained</text>
+    <text x="-10" y="5" font-family="'Inter', sans-serif" font-size="13" fill="#94A3B8">&#8226;</text>
+    <text x="10" y="5" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#38BDF8">Ready for NOC / Support</text>
+  </g>
+</svg>

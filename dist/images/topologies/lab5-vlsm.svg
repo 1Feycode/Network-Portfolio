@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07111F" />
+      <stop offset="100%" stop-color="#0B1C33" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad5)" rx="8" />
+
+  <!-- Banner -->
+  <rect x="20" y="20" width="760" height="40" rx="6" fill="#0A182E" stroke="#008CFF" stroke-width="1" stroke-opacity="0.3" />
+  <text x="40" y="45" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#00A3FF">TOPOLOGY &amp; DESIGN: VLSM ADDRESS ALLOCATION SCHEME</text>
+  <text x="730" y="45" font-family="'Inter', sans-serif" font-size="12" fill="#94A3B8" text-anchor="end">Root Network: 192.168.1.0/24 (Zero Address Waste)</text>
+
+  <!-- Root Block /24 -->
+  <rect x="40" y="80" width="720" height="40" rx="4" fill="#0A2244" stroke="#008CFF" stroke-width="1.5" />
+  <text x="55" y="105" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Major Network: 192.168.1.0/24 (Total 256 Addresses: 254 Usable Hosts)</text>
+  <text x="740" y="105" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8" text-anchor="end">Mask: 255.255.255.0</text>
+
+  <!-- Subnet Division Bars -->
+  <!-- Block 1: /25 (100 hosts needed) -->
+  <rect x="40" y="140" width="350" height="85" rx="6" fill="rgba(0, 140, 255, 0.12)" stroke="#008CFF" stroke-width="1.5" />
+  <rect x="50" y="150" width="120" height="20" rx="3" fill="#008CFF" />
+  <text x="110" y="164" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">HQ LAN (100 Hosts)</text>
+  <text x="50" y="190" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Network: 192.168.1.0 /25</text>
+  <text x="50" y="206" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">Range: .1 - .126 | Mask: 255.255.255.128</text>
+  <text x="50" y="219" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38BDF8">Broadcast: 192.168.1.127</text>
+
+  <!-- Block 2: /26 (50 hosts needed) -->
+  <rect x="410" y="140" width="350" height="85" rx="6" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1.5" />
+  <rect x="420" y="150" width="130" height="20" rx="3" fill="#10B981" />
+  <text x="485" y="164" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Branch LAN (50 Hosts)</text>
+  <text x="420" y="190" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">Network: 192.168.1.128 /26</text>
+  <text x="420" y="206" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">Range: .129 - .190 | Mask: 255.255.255.192</text>
+  <text x="420" y="219" font-family="'JetBrains Mono', monospace" font-size="9" fill="#34D399">Broadcast: 192.168.1.191</text>
+
+  <!-- Block 3: /27 (20 hosts needed) -->
+  <rect x="40" y="245" width="230" height="85" rx="6" fill="rgba(245, 158, 11, 0.12)" stroke="#F59E0B" stroke-width="1.5" />
+  <rect x="50" y="255" width="110" height="20" rx="3" fill="#F59E0B" />
+  <text x="105" y="269" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#000000" text-anchor="middle">Server LAN (20 Hosts)</text>
+  <text x="50" y="293" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FFFFFF">192.168.1.192 /27</text>
+  <text x="50" y="307" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8">.193 - .222 (Mask: .224)</text>
+  <text x="50" y="320" font-family="'JetBrains Mono', monospace" font-size="9" fill="#FBBF24">Broadcast: .223</text>
+
+  <!-- Block 4: /28 (10 hosts needed) -->
+  <rect x="290" y="245" width="220" height="85" rx="6" fill="rgba(168, 85, 247, 0.12)" stroke="#A855F7" stroke-width="1.5" />
+  <rect x="300" y="255" width="110" height="20" rx="3" fill="#A855F7" />
+  <text x="355" y="269" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">WiFi Guest (10 Hosts)</text>
+  <text x="300" y="293" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FFFFFF">192.168.1.224 /28</text>
+  <text x="300" y="307" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8">.225 - .238 (Mask: .240)</text>
+  <text x="300" y="320" font-family="'JetBrains Mono', monospace" font-size="9" fill="#C084FC">Broadcast: .239</text>
+
+  <!-- Block 5: /30 Point-to-Point WAN Links -->
+  <rect x="530" y="245" width="230" height="85" rx="6" fill="rgba(239, 68, 68, 0.12)" stroke="#EF4444" stroke-width="1.5" />
+  <rect x="540" y="255" width="110" height="20" rx="3" fill="#EF4444" />
+  <text x="595" y="269" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">WAN Serial Link /30</text>
+  <text x="540" y="293" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FFFFFF">192.168.1.240 /30</text>
+  <text x="540" y="307" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8">.241 - .242 (2 Usable)</text>
+  <text x="540" y="320" font-family="'JetBrains Mono', monospace" font-size="9" fill="#F87171">Mask: 255.255.255.252</text>
+
+  <!-- Summary Bar -->
+  <rect x="40" y="355" width="720" height="65" rx="6" fill="#0A182E" stroke="#008CFF" stroke-width="1" />
+  <text x="60" y="380" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#00A3FF">Design Efficiency Evaluation:</text>
+  <text x="60" y="402" font-family="'Inter', sans-serif" font-size="11" fill="#CBD5E1">&#10003; 0% IP Address Collisions | &#10003; Reduced Broadcast Domains | &#10003; 14 Addresses Reserved for Future Expansion</text>
+</svg>

@@ -1,0 +1,127 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /Resources <<
+    /Font <<
+      /F1 4 0 R
+      /F2 5 0 R
+    >>
+  >>
+  /MediaBox [0 0 595.28 841.89]
+  /Contents 6 0 R
+>>
+endobj
+4 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Bold
+>>
+endobj
+5 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+6 0 obj
+<<
+  /Length 1200
+>>
+stream
+BT
+/F1 22 Tf
+50 780 Td
+(FEYISA GIRMA) Tj
+0 -25 Td
+/F1 12 Tf
+(ASPIRING NETWORK ENGINEER | CCNA TRAINED) Tj
+0 -20 Td
+/F2 10 Tf
+(Phone: 0951395410 | Education: 4th year IT student | Focus: Network Engineering) Tj
+0 -15 Td
+(Languages: Afaan Oromo, Amharic, English) Tj
+0 -30 Td
+/F1 14 Tf
+(PROFESSIONAL PROFILE) Tj
+0 -18 Td
+/F2 10 Tf
+(Aspiring Network Engineer with strong foundation in networking concepts and practical) Tj
+0 -14 Td
+(experience gained through comprehensive CCNA training and hands-on lab environments.) Tj
+0 -14 Td
+(Passionate about routing, switching, VLAN segmentation, ACL security, and network troubleshooting.) Tj
+0 -30 Td
+/F1 14 Tf
+(STATUS & CERTIFICATION) Tj
+0 -18 Td
+/F2 10 Tf
+(- CCNA Training Completed | Official Cisco CCNA (200-301) Certification Pending) Tj
+0 -14 Td
+(- 4th Year IT Student with strong academic and practical project background) Tj
+0 -30 Td
+/F1 14 Tf
+(CORE TECHNICAL SKILLS) Tj
+0 -18 Td
+/F2 10 Tf
+(- Routing: OSPF, Static & Default Routing, Inter-VLAN Routing (Router-on-a-Stick)) Tj
+0 -14 Td
+(- Switching: VLANs, 802.1Q Trunking, Spanning Tree Protocol (STP), EtherChannel) Tj
+0 -14 Td
+(- Services: DHCP Configuration, DNS fundamentals, NAT/PAT, NTP) Tj
+0 -14 Td
+(- Security: Standard & Extended Access Control Lists (ACLs), Port Security, SSH Hardening) Tj
+0 -14 Td
+(- Tools: Cisco Packet Tracer, Cisco IOS CLI, Wireshark, Windows 10, Linux CLI) Tj
+0 -30 Td
+/F1 14 Tf
+(KEY NETWORKING LABS COMPLETED) Tj
+0 -18 Td
+/F2 10 Tf
+(1. VLAN & Inter-VLAN Routing: Multi-VLAN segmentation with 802.1Q trunking on Cisco 2960.) Tj
+0 -14 Td
+(2. OSPF Multi-Router Topology: Area 0 routing, metric cost tuning, and neighbor convergence.) Tj
+0 -14 Td
+(3. DHCP & NAT/PAT Services: Centralized IP distribution and private-to-public IP translation.) Tj
+0 -14 Td
+(4. Network Security with ACLs: Traffic filtering, port blocking, and host isolation.) Tj
+0 -14 Td
+(5. Subnetting & VLSM Design: Optimized IPv4 allocation minimizing address waste.) Tj
+0 -14 Td
+(6. Enterprise Network Simulation: End-to-end multi-tier corporate network architecture.) Tj
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000266 00000 n 
+0000000344 00000 n 
+0000000417 00000 n 
+trailer
+<<
+  /Size 7
+  /Root 1 0 R
+>>
+startxref
+1700
+%%EOF
